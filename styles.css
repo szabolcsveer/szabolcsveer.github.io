@@ -1,0 +1,97 @@
+body {
+	font-family: consolas;
+	margin: 0;
+	line-height: 1.5;
+}
+
+a {
+	color: #ff0099;
+	padding: 1vw;
+}
+h1 {
+	margin: 0;
+	padding-top: 5vh;
+	font-size: 50px;
+	font-family: 'Alegreya', serif;
+	animation: move 8s 1 ;
+	
+}
+h3 {
+	color: #ff0099;
+	font-size: 26px;
+
+}
+h4 {
+	font-size: 20px;
+	margin: 0;
+}
+hr {
+	border-top: 3px dashed ;
+	max-width: 25px;
+}
+
+main{
+	padding-bottom: 5vh;
+}
+
+/*HEADER*/
+header{
+	background-color: #333333;
+	margin: 0;
+
+}
+nav ul li{
+	display: inline;
+
+}
+ul {
+	
+	float: right;
+	/*padding: 2vw;*/
+}
+/*SECTION*/
+nav,#main{
+	
+	padding-left: 10%;
+	padding-right: 10%;
+	
+}
+
+#main {
+	margin: 0;
+	padding: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-image:url("assets/background/background.png");
+	
+}
+#wiki_title{
+	text-align: center;
+	color: #000;
+}
+
+.logo{
+	/*opacity: 0;*/
+	animation: rotation 5s infinite linear;
+	
+}
+
+/*Animations*/
+
+@keyframes rotation {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  } 
+/*0% {opacity: 0;}
+100% {opacity: 1;}*/
+
+}
+
+@keyframes move {
+	from { margin-left:-500px; }
+  	to { margin-left: 0px; }
+}
+
